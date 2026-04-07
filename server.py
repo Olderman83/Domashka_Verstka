@@ -26,4 +26,4 @@ if __name__ == "__main__":
 
     # Корректная остановка веб-сервера, чтобы он освободил адрес и порт в сети, которые занимал
     webServer.server_close()
-    print("Server stopped.")
+    print("Server stopped.")h
