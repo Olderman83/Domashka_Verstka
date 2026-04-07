@@ -8,17 +8,79 @@
           integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
   </head>
   <body>
-    <div class="row align-items-start">
-    <div class="col-3">
-      One of three columns
+    <div class="row">
+      <div class="col-3">
+        <div class="row">
+          <div class="col-7"style="background: #333; height: 100vh; color: white;">
+            <div style="padding-left: 20px;"> <!-- ← Добавленный контейнер с отступом -->
+            <h3>Меню</h3>
+            <hr>
+            Главная<br>
+            Категории<br>
+            Контакты<br>
+            Заказы<br>
+            </div>
+            <div class="fixed-bottom">
+              <hr>
+            <div class="dropdown">
+            <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Пользователь
+            </button>
+            <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#">Профиль</a></li>
+            <li><a class="dropdown-item" href="#">Выход</a></li>
+            </ul>
+            </div>
+            </div>
+          </div>
+          <div class="col-5"></div>
+        </div>
+      </div>
+      <div class="col-8">
+      <h1 class="text-center mt-5">Главная</h1>
+      <h3 class="text-center mt-3">Вы находитесь на сайте, предназначенном для продажи товаров</h3>
+        <div class="row mt-5">
+          <div class="col-4">
+            <div class="card">
+              <h5 class="card-header text-center">Товар 1</h5>
+              <div class="card-body text-center">
+              <h2 class="card-title">100$</h2>
+              <p class="card-text">10 users included, 2 GB of storage, Email support, Help center access.</p>
+              <div class="d-grid gap-2">
+                <button type="button" class="btn btn-outline-primary">Купить</button>
+              </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-4">
+            <div class="card">
+              <h5 class="card-header text-center">Товар 1</h5>
+              <div class="card-body text-center">
+              <h2 class="card-title">100$</h2>
+              <p class="card-text">10 users included, 2 GB of storage, Email support, Help center access.</p>
+              <div class="d-grid gap-2">
+                <button type="button" class="btn btn-outline-primary">Купить</button>
+              </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-4">
+            <div class="card">
+              <h5 class="card-header text-center">Товар 1</h5>
+              <div class="card-body text-center">
+              <h2 class="card-title">100$</h2>
+              <p class="card-text">10 users included, 2 GB of storage, Email support, Help center access.</p>
+              <div class="d-grid gap-2">
+                <button type="button" class="btn btn-outline-primary">Купить</button>
+              </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-1"></div>
     </div>
-    <div class="col-9">
-      <h1 class="text-center">Главная</h1>
-    </div>
-    <div class="col-0">
-      One of three columns
-    </div>
-  </div>
-    <h1 class="text-center">Главная</h1>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.3.8/js/bootstrap.bundle.min.js">
+  </script>
   </body>
 </html>
