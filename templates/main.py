@@ -6,7 +6,7 @@ serverPort = 8080 # Порт для доступа по сети
 class MyServer(BaseHTTPRequestHandler):
     def do_GET(self):
         self.send_response(200)
-        self.send_header("Content-type = text/html")
+        self.send_header("Content-type", "text/html")
         self.end_headers()
         with open('contacts.html', 'r', encoding='utf-8') as file:
             html_content = file.read()
@@ -26,4 +26,4 @@ if __name__ == "__main__":
 
     # Корректная остановка веб-сервера, чтобы он освободил адрес и порт в сети, которые занимал
     webServer.server_close()
-    print("Server stopped.")h
+    print("Server stopped.")
